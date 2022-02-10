@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Pictures} from './Pictures';
+import {API_URL} from './config';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends React.Component {
+
+    state = {
+        pictures: [],
+    };
+
+    componentDidMount(){
+        fetch(API_URL)
+            .then(response=>response.json())
+            .then(data=>this.setState({pictures:data}))
+    };
+
+    render() {
+        // TODO: implement component
+        const {pictures} = this.state;
+        return (
+            <main className="container content">
+                <h2>Imagery collected by DSCOVR's EPIC instrument</h2>
+                {
+                    pictures.length ? (
+                        <Pictures pictures = {this.state.pictures} />
+                    ) : (<h3>Loading...</h3>)
+                }
+                <h4>The most recent images of our planet from space, taken with the Earth Polychromatic Imaging Camera</h4><hr/>
+                <h6>Pictures from the NASA-archive, where the full disc of the Earth and unique astronomical events are recorded from the Earth-Sun Lagrange point.</h6>
+            </main>
+        );
+    };
 }
-
-export default App;

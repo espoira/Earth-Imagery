@@ -1,13 +1,70 @@
 body {
   margin: 0;
+  color:ghostwhite;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("kosmos.jpg") repeat-y;
+  background-size: 100%;
+  animation: show 5s;
+}
+@keyframes show {
+  from {opacity: 0;} to {opacity: 1;}
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+h2{
+  text-align: center;
+  padding-bottom: 1rem;
+}
+h4{
+  font-size: 28px;
+  margin: 40px 0px 25px 10px;
+}
+h6{
+  margin: 15px 0px 20px 0px;
+  text-align: center;
+}
+hr{
+  opacity: 0.5;
+}
+
+
+.content {
+  min-height: calc(100vh - 134px);
+  padding: 1.5rem 0;
+}
+
+.pictures {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+}
+.card-content {
+  flex-grow: 1;
+}
+
+.date{
+  float:left;
+}
+.time{
+  float:right;
+}
+
+.card-image:active{
+  transform: scale(2);
+  z-index: 1;
 }
