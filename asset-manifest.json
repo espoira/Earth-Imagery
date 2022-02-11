@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Earth-Imagery/static/css/main.adafa2c0.chunk.css",
+    "main.js": "/Earth-Imagery/static/js/main.669df5ae.chunk.js",
+    "main.js.map": "/Earth-Imagery/static/js/main.669df5ae.chunk.js.map",
+    "runtime-main.js": "/Earth-Imagery/static/js/runtime-main.6ccfd651.js",
+    "runtime-main.js.map": "/Earth-Imagery/static/js/runtime-main.6ccfd651.js.map",
+    "static/js/2.1ea9c042.chunk.js": "/Earth-Imagery/static/js/2.1ea9c042.chunk.js",
+    "static/js/2.1ea9c042.chunk.js.map": "/Earth-Imagery/static/js/2.1ea9c042.chunk.js.map",
+    "index.html": "/Earth-Imagery/index.html",
+    "static/css/main.adafa2c0.chunk.css.map": "/Earth-Imagery/static/css/main.adafa2c0.chunk.css.map",
+    "static/js/2.1ea9c042.chunk.js.LICENSE.txt": "/Earth-Imagery/static/js/2.1ea9c042.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Earth-Imagery/static/media/kosmos.225fe56c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6ccfd651.js",
+    "static/js/2.1ea9c042.chunk.js",
+    "static/css/main.adafa2c0.chunk.css",
+    "static/js/main.669df5ae.chunk.js"
+  ]
+}
