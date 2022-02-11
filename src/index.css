@@ -52,6 +52,7 @@ hr{
   display: flex;
   flex-direction: column;
   color: #000;
+  animation: show 35s;
 }
 .card-content {
   flex-grow: 1;
